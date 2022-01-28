@@ -1,0 +1,12 @@
+$(document).ready(function(){
+$(".secundario").on("click",function(){
+    $("#principal").css("background-color",$(this).css("background-color"));
+})
+$(".secundario").on("mousemove",function(evento){
+    $("#mensaje").css({
+        "background-color":"black",
+         "color":"white",
+          "position":evento})
+  $("#mensaje").text($(this).css("background-color"));
+})
+})
