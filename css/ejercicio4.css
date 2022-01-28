@@ -1,0 +1,29 @@
+#principal{
+    height: 5000px; 
+    width: 5000px;
+    background-color: blue;
+    
+}
+.secundario{
+    top: 15px;
+    margin-left: 10px;
+    height: 30px; 
+    width: 30px; 
+    border: 2px solid white;
+    position: absolute;
+}
+#secundario1{
+background-color: blue;
+}
+#secundario2{
+    background-color: red;
+    left: 60px;
+}
+#secundario3{
+    background-color: green;
+    left: 120px;
+}
+#secundario4{
+    background-color: yellow;
+    left: 180px;
+}
