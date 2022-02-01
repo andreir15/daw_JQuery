@@ -2,11 +2,25 @@ $(document).ready(function(){
 $(".secundario").on("click",function(){
     $("#principal").css("background-color",$(this).css("background-color"));
 })
-$(".secundario").on("mousemove",function(evento){
+$(".secundario").on("mouseenter",function(evento){
     $("#mensaje").css({
-        "background-color":"black",
-         "color":"white",
-          "position":evento})
-  $("#mensaje").text($(this).css("background-color"));
+        "background-color":"turquoise",
+         "color":"black",
+         "width":150,
+         "heigth":50,
+         "text-align":"center",
+         "position":"absolute",
+         "visibility":"visible",
+         "border-radius":5,
+         "left":evento.pageX,
+         "top":evento.pageY
+          })
+  $("#mensaje").text($(this).data("nombre"));
+})
+$(".secundario").on("mouseleave",function(){
+    $("#mensaje").css({
+         "visibility":"hidden"
+          })
+
 })
 })
