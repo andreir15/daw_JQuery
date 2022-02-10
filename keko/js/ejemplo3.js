@@ -55,7 +55,7 @@ $(document).ready(function(){
 		}
 		x_keko=parseInt($("div.keko").css("left")); y_keko=parseInt($("div.keko").css("top"));
 		x_caterpie=parseInt($("div.caterpie").css("left")); y_caterpie=parseInt($("div.caterpie").css("top"));		
-		//x_pokemons=parseInt($("div.pokemons").css("left")); y_pokemons=parseInt($("div.pokemons").css("top"));		
+		x_pokemons=parseInt($("div.pokemons").css("left")); y_pokemons=parseInt($("div.pokemons").css("top"));		
 	
 		if (x_caterpie>x_keko-30 && x_caterpie<x_keko+30)
 			if (y_caterpie>y_keko-30 && y_caterpie<y_keko+30)
